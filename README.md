@@ -1,4 +1,5 @@
 # Domain Manager
+<img width="1920" height="920" alt="image" src="https://github.com/user-attachments/assets/d5b705cf-b336-4bbb-b6c9-c5c75bd61817" />
 
 域名与 HTTPS SSL 证书监控管理系统。使用 Go + Vue 3 开发，前端静态资源通过 `go:embed` 嵌入后端，最终交付为**单个 Linux 二进制文件**，运行时不依赖 Node.js、MySQL、Redis、Nginx 或 Docker。
 
