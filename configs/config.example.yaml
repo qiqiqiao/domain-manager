@@ -1,0 +1,20 @@
+# Domain Manager configuration example.
+# Copy to configs/config.yaml and adjust for your deployment.
+
+server:
+  # Listen on loopback by default; put a TLS reverse proxy in front for remote access.
+  host: 127.0.0.1
+  port: 10120
+  mode: release
+  # Enable when the browser reaches the service over HTTPS (directly or via a proxy).
+  cookie_secure: false
+  # Only trust proxy headers from these addresses.
+  trusted_proxies: ["127.0.0.1"]
+  read_timeout_seconds: 30
+  write_timeout_seconds: 60
+  max_upload_mb: 100
+
+data_dir: ./data
+log_dir: ./logs
+database_path: ./data/domain-manager.db
+log_level: info
